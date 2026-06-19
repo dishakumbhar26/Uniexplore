@@ -18,7 +18,7 @@ export function HomePage() {
   setAiSearched(true);
   try {
     const res = await fetch(
-      `http://localhost:8000/recommend?interests=${encodeURIComponent(aiInterests)}`
+      `https://uniexplore-api.onrender.com/recommend?interests=${encodeURIComponent(aiInterests)}`
     );
     const data = await res.json();
     setAiRecommendations(data);
@@ -29,7 +29,7 @@ export function HomePage() {
   setAiLoading(false);
 };
 useEffect(() => {
-  fetch("http://localhost:8000/courses")
+  fetch("https://uniexplore-api.onrender.com/courses")
     .then(res => res.json())
     .then(data => setCourseList(data));
 }, []);

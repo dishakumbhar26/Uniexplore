@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:8000";
+const BASE_URL = "https://uniexplore-api.onrender.com";
 
 // Get all courses from Python backend
 export async function fetchCourses() {
