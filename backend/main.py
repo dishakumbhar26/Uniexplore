@@ -6,7 +6,7 @@ app = FastAPI()
 # This allows your React frontend to talk to Python
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://uniexplore.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
